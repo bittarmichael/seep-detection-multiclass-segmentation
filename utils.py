@@ -32,7 +32,7 @@ class ImageHelperFunctions:
         print(f"counts: {counts[1]}")
         
         if show:
-            plt.bar(counts[0], counts[1])
+            plt.bar(counts[0][1:], counts[1][1:])
             plt.show()
         return counts[0], counts[1]
         
